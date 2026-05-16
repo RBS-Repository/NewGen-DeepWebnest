@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewGen WebNest — Your Gateway to Entertainment & Tools</title>
+    <meta name="description"
+        content="NewGen WebNest — your one-stop hub for games, movies, streaming, software, books, music, anime, VPN, and ad blockers.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/images/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/images/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        (function () {
+            const t = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', t);
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="bg-orbs" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Top Navigation Bar -->
+    <nav class="topbar">
+        <a href="index.html" class="topbar-brand">
+
+            <span class="topbar-name">NewGen WebNest</span>
+        </a>
+        <div class="topbar-actions">
+            <button class="theme-btn" id="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme">
+                <span class="theme-btn-icon" id="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1 class="hero-title">Explore Everything<span class="dot">.</span></h1>
+        <p class="hero-desc">Games, movies, music, tools — all in one place. Pick a category and dive in.</p>
+    </section>
+
+    <!-- Bento Grid -->
+    <main class="bento" id="bento-grid">
+
+        <a href="games.html" class="bento-card bento-lg" data-accent="rose" id="card-games">
+            <div class="bento-shine"></div>
+            <div class="bento-icon">🎮</div>
+            <div class="bento-info">
+                <h2>Games</h2>
+                <p>Discover amazing games and gaming resources</p>
+            </div>
+            <div class="bento-arrow">→</div>
+        </a>
+
+        <a href="movies.html" class="bento-card bento-md" data-accent="amber" id="card-movies">
+            <div class="bento-shine"></div>
+            <div class="bento-icon">🎬</div>
+            <div class="bento-info">
+                <h2>Movies & Shows</h2>
+                <p>Stream your favorite movies and TV shows</p>
+            </div>
+            <div class="bento-arrow">→</div>
+        </a>
+
+        <a href="streaming.html" class="bento-card bento-md" data-accent="sky" id="card-streaming">
+            <div class="bento-shine"></div>
+            <div class="bento-icon">📺</div>
+            <div class="bento-info">
+                <h2>Streaming</h2>
+                <p>Live sports & TV channels</p>
+            </div>
+            <div class="bento-arrow">→</div>
+        </a>
+
+        <a href="anime.html" class="bento-card bento-lg" data-accent="violet" id="card-anime">
+            <div class="bento-shine"></div>
+            <div class="bento-icon">🌸</div>
+            <div class="bento-info">
+                <h2>Anime</h2>
+                <p>Anime streaming and manga resources</p>
+            </div>
+            <div class="bento-arrow">→</div>
+        </a>
+
+        <a href="music.html" class="bento-card bento-sm" data-accent="emerald" id="card-music">
+            <div class="bento-shine"></div>
+            <div class="bento-icon">🎵</div>
+            <div class="bento-info">
+                <h2>Music</h2>
+                <p>Audio platforms</p>
+            </div>
+            <div class="bento-arrow">→</div>
+        </a>
+
+        <a href="books.html" class="bento-card bento-sm" data-accent="orange" id="card-books">
+            <div class="bento-shine"></div>
+            <div class="bento-icon">📚</div>
+            <div class="bento-info">
+                <h2>Books</h2>
+                <p>Digital libraries</p>
+            </div>
+            <div class="bento-arrow">→</div>
+        </a>
+
+        <a href="software.html" class="bento-card bento-sm" data-accent="cyan" id="card-software">
+            <div class="bento-shine"></div>
+            <div class="bento-icon">💻</div>
+            <div class="bento-info">
+                <h2>Software</h2>
+                <p>Dev tools</p>
+            </div>
+            <div class="bento-arrow">→</div>
+        </a>
+
+        <a href="vpn.html" class="bento-card bento-md" data-accent="indigo" id="card-vpn">
+            <div class="bento-shine"></div>
+            <div class="bento-icon">🔒</div>
+            <div class="bento-info">
+                <h2>VPN</h2>
+                <p>Virtual private networks and security tools</p>
+            </div>
+            <div class="bento-arrow">→</div>
+        </a>
+
+        <a href="adblockers.html" class="bento-card bento-md" data-accent="lime" id="card-adblockers">
+            <div class="bento-shine"></div>
+            <div class="bento-icon">🛡️</div>
+            <div class="bento-info">
+                <h2>Ad Blockers</h2>
+                <p>Ad blocking tools and privacy extensions</p>
+            </div>
+            <div class="bento-arrow">→</div>
+        </a>
+
+    </main>
+
+    <!-- Tip Banner -->
+    <div class="tip-banner">
+        <span class="tip-emoji">💡</span>
+        <span>Close popup ads for the best experience</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 NewGen WebNest</p>
+    </footer>
+
+    <!-- Left Side Ad -->
+    <div class="ad-container ad-left">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8586307716491899"
+            data-ad-slot="3493012080" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <!-- Right Side Ad -->
+    <div class="ad-container ad-right">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8586307716491899"
+            data-ad-slot="3493012080" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
