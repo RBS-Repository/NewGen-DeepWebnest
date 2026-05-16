@@ -236,6 +236,39 @@ html[data-theme="light"] .bento-card:hover .bento-icon{
   font-size:.8rem;
 }
 
+.footer-credit {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.footer-credit a {
+  color: var(--text);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+  text-decoration: none;
+}
+
+.footer-credit a:hover {
+  color: var(--violet);
+  text-shadow: 0 0 8px rgba(167, 139, 250, 0.4);
+}
+
+.footer-credit a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--violet);
+  transition: width 0.3s ease;
+}
+
+.footer-credit a:hover::after {
+  width: 100%;
+}
+
 /* ===== ADS ===== */
 .ad-container{
   position:fixed;top:50%;transform:translateY(-50%);
