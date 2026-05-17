@@ -41,12 +41,6 @@ function initWelcomePopup() {
     const overlay = document.getElementById('welcome-popup');
     if (!overlay) return;
 
-    // Check if visitor has already seen the popup
-    if (localStorage.getItem('riftnest-welcomed')) {
-        overlay.remove();
-        return;
-    }
-
     // Show popup after a brief delay for a smooth entrance
     setTimeout(() => {
         overlay.classList.add('active');
@@ -54,7 +48,6 @@ function initWelcomePopup() {
 
     function dismissPopup() {
         overlay.classList.remove('active');
-        localStorage.setItem('riftnest-welcomed', 'true');
         // Remove from DOM after animation completes
         setTimeout(() => overlay.remove(), 500);
     }
