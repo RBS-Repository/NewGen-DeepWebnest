@@ -19,6 +19,7 @@
         content="free streaming sites, free movie sites, anime streaming, free games, VPN, ad blockers, entertainment hub">
     <link rel="canonical" href="https://riftnest.vercel.app/">
     <meta name="theme-color" content="#0a0a0f">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -49,7 +50,7 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <!-- JSON-LD Schema -->
+    <!-- JSON-LD Schema: WebSite -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -62,6 +63,30 @@
             "name": "RiftNest",
             "url": "https://riftnest.vercel.app/",
             "logo": "https://riftnest.vercel.app/photos/Logo.png"
+        }
+    }
+    </script>
+    <!-- JSON-LD Schema: ItemList (Categories) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "RiftNest — Free Entertainment & Tools Hub",
+        "description": "Curated directory of free streaming, gaming, anime, music, book, software, VPN, and ad blocker resources.",
+        "url": "https://riftnest.vercel.app/",
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Free Game Downloads & ROMs", "url": "https://riftnest.vercel.app/games.html"},
+                {"@type": "ListItem", "position": 2, "name": "Free Movie Streaming Sites", "url": "https://riftnest.vercel.app/movies.html"},
+                {"@type": "ListItem", "position": 3, "name": "Free Live TV & Sports Streaming", "url": "https://riftnest.vercel.app/streaming.html"},
+                {"@type": "ListItem", "position": 4, "name": "Free Anime Streaming Sites", "url": "https://riftnest.vercel.app/anime.html"},
+                {"@type": "ListItem", "position": 5, "name": "Free Music Platforms & Downloaders", "url": "https://riftnest.vercel.app/music.html"},
+                {"@type": "ListItem", "position": 6, "name": "Free eBook & Audiobook Sites", "url": "https://riftnest.vercel.app/books.html"},
+                {"@type": "ListItem", "position": 7, "name": "Free Software & Dev Tools", "url": "https://riftnest.vercel.app/software.html"},
+                {"@type": "ListItem", "position": 8, "name": "Best VPN Services", "url": "https://riftnest.vercel.app/vpn.html"},
+                {"@type": "ListItem", "position": 9, "name": "Best Ad Blockers & Privacy Tools", "url": "https://riftnest.vercel.app/adblockers.html"}
+            ]
         }
     }
     </script>
@@ -124,10 +149,11 @@
 
     <!-- Hero -->
     <section class="hero">
-        <img src="photos/Logo.png" alt="Hero Logo"
+        <img src="photos/Logo.png" alt="RiftNest — free entertainment and tools hub"
             style="max-height: 120px; margin-bottom: 24px; display: block; margin-left: auto; margin-right: auto;" />
-        <h1 class="hero-title">Explore Everything<span class="dot">.</span></h1>
-        <p class="hero-desc">Games, movies, music, tools — all in one place. Pick a category and dive in.</p>
+        <h1 class="hero-title">Your Free Entertainment Hub<span class="dot">.</span></h1>
+        <p class="hero-desc">Free streaming, games, anime, music, books, VPNs & ad blockers — curated and updated for
+            2026.</p>
     </section>
 
     <!-- Bento Grid -->
