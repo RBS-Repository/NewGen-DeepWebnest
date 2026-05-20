@@ -41,6 +41,11 @@ function initWelcomePopup() {
     const overlay = document.getElementById('welcome-popup');
     if (!overlay) return;
 
+    if (sessionStorage.getItem('welcomeShown')) {
+        overlay.remove();
+        return;
+    }
+
     // Show popup after a brief delay for a smooth entrance
     setTimeout(() => {
         overlay.classList.add('active');
@@ -48,6 +53,7 @@ function initWelcomePopup() {
 
     function dismissPopup() {
         overlay.classList.remove('active');
+        sessionStorage.setItem('welcomeShown', 'true');
         // Remove from DOM after animation completes
         setTimeout(() => overlay.remove(), 500);
     }
@@ -76,7 +82,36 @@ function initWelcomePopup() {
 document.addEventListener('DOMContentLoaded', () => {
     applyTheme();
     initWelcomePopup();
+
+    // Make photo previews follow the cursor
+    document.addEventListener('mousemove', (e) => {
+        const cards = document.querySelectorAll('.link-card:hover');
+        cards.forEach(card => {
+            const preview = card.querySelector('.photo-preview');
+            if (preview) {
+                const rect = card.getBoundingClientRect();
+                preview.style.left = (e.clientX - rect.left) + 'px';
+                preview.style.top = (e.clientY - rect.top + 20) + 'px';
+                preview.style.transform = 'translateX(-50%) scale(1)';
+            }
+        });
+    });
 });
 
 // Expose globally
 window.toggleTheme = toggleTheme;
+
+// Track outbound link clicks
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('a[target="_blank"]').forEach(link => {
+        link.addEventListener('click', () => {
+            if (typeof gtag === 'function') {
+                gtag('event', 'click', {
+                    event_category: 'outbound',
+                    event_label: link.href,
+                    transport_type: 'beacon'
+                });
+            }
+        });
+    });
+});
