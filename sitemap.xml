@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://riftnest.vercel.app/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://riftnest.vercel.app/games.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://riftnest.vercel.app/movies.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://riftnest.vercel.app/streaming.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://riftnest.vercel.app/anime.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://riftnest.vercel.app/music.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://riftnest.vercel.app/books.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://riftnest.vercel.app/software.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://riftnest.vercel.app/vpn.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://riftnest.vercel.app/adblockers.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.riftnest.giize.com/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.riftnest.giize.com/games.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.riftnest.giize.com/movies.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.riftnest.giize.com/streaming.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.riftnest.giize.com/anime.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.riftnest.giize.com/music.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.riftnest.giize.com/books.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.riftnest.giize.com/software.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.riftnest.giize.com/vpn.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.riftnest.giize.com/adblockers.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
 </urlset>

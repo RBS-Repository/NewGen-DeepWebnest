@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /google8a2eb974b2eeb2fb.html
-Sitemap: https://riftnest.vercel.app/sitemap.xml
+Sitemap: https://www.riftnest.giize.com/sitemap.xml
 
 User-agent: AdsBot-Google
 Allow: /
